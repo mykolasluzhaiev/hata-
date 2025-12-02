@@ -1,0 +1,180 @@
+* {
+    outline: 1px solid red;
+
+}
+
+
+
+body {
+    cursor: url(../img/cursor.cur), auto;
+    margin: 0;
+
+}
+
+.lake_hous {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* Додаємо відступ між заголовком і текстом */
+    gap: 20px;
+
+    /* Щоб текст був по центру стовпчика */
+    /* text-align: center; */
+    background-image: url('../img/lake_house.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+}
+
+.img_text {
+    box-sizing: border-box;
+    max-width: 520px;
+    text-align: center;
+}
+
+.img_text h1,
+p {
+    color: #fff;
+}
+
+.price {
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+
+
+.wrapper {
+    box-sizing: border-box;
+    max-width: 960px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.heder_nav {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: flex-start; */
+    background-color: #1f1f56;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width: 490px;
+    list-style: none;
+    column-gap: 30px;
+    color: #b1b1d2;
+}
+
+.two {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    max-width: 100px;
+    column-gap: 26px;
+    list-style: none;
+}
+
+.heder_under {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 960px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+
+}
+
+.phone_number {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.phone-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.phone-row_two {
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.mail_skype {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mailSkype {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+
+.submit {
+    color: black;
+    /* font-weight: bold; */
+    font-size: 16px;
+    border: 2px solid #fd8300;
+    border-radius: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.description_hous {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 960px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+footer img {
+    height: 17px;
+    width: 17px;
+}
