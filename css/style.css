@@ -1,9 +1,13 @@
-* {
+/* * {
     outline: 1px solid red;
 
+} */
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
 }
-
-
 
 body {
     cursor: url(../img/cursor.cur), auto;
@@ -16,6 +20,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 58px;
+    padding-bottom: 45px;
 
     /* Додаємо відступ між заголовком і текстом */
     gap: 20px;
@@ -32,20 +38,67 @@ body {
     box-sizing: border-box;
     max-width: 520px;
     text-align: center;
+
 }
 
-.img_text h1,
+.img_text p {
+    margin-bottom: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.img_text p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Arial";
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Roboto Slab";
+    margin-bottom: 12px;
+}
+
+/* .img_text h1,
 p {
     color: #fff;
-}
+} */
 
-.price {
+p.price {
     font-size: 40px;
     line-height: 24px;
     color: #fd8300;
     font-weight: bold;
-    padding-bottom: 30px;
+    font-family: "Arial";
+
+    /* padding-bottom: 30px; */
+
 }
+
+.price span {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
 
 
 
@@ -97,6 +150,7 @@ ul span {
     justify-content: space-between;
     align-items: flex-start; */
     background-color: #1f1f56;
+    padding: 18px;
 
 }
 
@@ -131,7 +185,7 @@ nav {
     box-sizing: border-box;
     max-width: 960px;
     width: 100%;
-    padding: 0 20px;
+    padding: 28px 20px;
     margin: 0 auto;
 
 }
@@ -176,24 +230,32 @@ nav {
 }
 
 
-.submit {
+.submit a {
     color: black;
-    /* font-weight: bold; */
-    font-size: 16px;
+    /* display: inline-block; */
+    display: block;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    border-radius: 25px;
+    background-color: #ffffff;
     border: 2px solid #fd8300;
-    border-radius: 40px;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 20px;
 }
 
-.submit p {
-    color: #000;
+.submit {
+    max-width: 200px;
+    width: 100%;
 }
+
+sup {}
 
 main {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    max-width: 960px;
-    width: 100%;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -202,22 +264,46 @@ main p {
     color: #000;
 }
 
-h2 {
+.description h2 {
     font-size: 30px;
     line-height: 24px;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
+    margin-bottom: 28px;
+}
+
+.description p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+    max-width: 677px;
+
+}
+
+.first_p {
+    margin-bottom: 20px;
+}
+
+.thecond_p {
+    margin-bottom: 25px;
+}
+
+.about_ous {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
 }
 
 .main_text {
     display: flex;
     flex-direction: column;
-    /* box-sizing: border-box;
-    max-width: 960px;
+    box-sizing: border-box;
+    max-width: 713px;
     width: 100%;
-    padding: 0 20px;
-    margin: 0 auto; */
 }
 
 .description_hous {
