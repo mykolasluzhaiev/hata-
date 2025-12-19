@@ -280,15 +280,32 @@ aside ul li a:hover {
     box-sizing: border-box;
     max-width: 1000px;
     width: 100%;
-    padding: 28px 20px;
+    padding: 28px 0;
     margin: 0 auto;
 
+}
+
+.phone-row {
+    padding-left: 30px;
+    position: relative;
 }
 
 .phone_number {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+}
+
+.phone-row::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    background-image: url('../img/phone.svg');
+    left: 0;
+    top: 0;
 }
 
 .phone_number a {
@@ -333,6 +350,34 @@ aside ul li a:hover {
     font-size: 18px;
 }
 
+.mail,
+.before {
+    position: relative;
+    padding-left: 22px;
+}
+
+.mail::before {
+    content: '';
+    display: block;
+    width: 17px;
+    height: 13px;
+    position: absolute;
+    background-image: url('../img/email.svg');
+    top: 3px;
+    left: 0;
+}
+
+.before::before {
+    content: '';
+    display: block;
+    width: 19px;
+    height: 18px;
+    position: absolute;
+    background-image: url('../img/skype.svg');
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+}
 
 .submit a {
     color: black;
@@ -357,8 +402,6 @@ aside ul li a:hover {
     max-width: 200px;
     width: 100%;
 }
-
-sup {}
 
 main {
     display: flex;
@@ -422,10 +465,7 @@ figure {
 }
 
 
-/* hr {
-    border: none;
-    border-top: 1px solid #e4e4ec;
-} */
+
 
 .main_text {
     display: flex;
